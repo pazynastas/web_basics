@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+    <h1>Моя перша HTML-форма</h1>
+    <form action="https://httpbin.org/get" method="get">
+    <lable for="name">Ім'я:</lable>
+    <input type="text" name="user_name">
+    <br>
+    <br>
+    <lable for="date">Дата народження:</lable>
+    <input type="date" name="user_birthday">
+    <br>
+    <br>
+    <lable for="email">Імейл:</lable>
+    <input type="email" name="user_email">
+    <br>
+    <br>
+    <lable for="massage">Повідомлення:</lable>
+    <textarea type="textarea" name="user_message"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Надіслати">
+    <input type="reset" value="Очистити">
+    <br>
+    <br>
+    <picture>
+        <source media="(min-width: 468px)" srcset="https://picsum.photos/600/400">
+        <img src="https://picsum.photos/300/300" style="width: auto;">
+    </picture>
+    <h2>Ваші улюблені напої?</h2>
+    <input name="Tea" type="checkbox">
+    <label for="Tea">Чай</label>
+    <input name="Coffe" type="checkbox">
+    <label for="Coffe">Кава</label>
+    <br>
+    <br>
+    <input name="Fanta" type="checkbox">
+    <label for="Fanta">Fanta</label>
+    <input name="Pepsi" type="checkbox">
+    <label for="Pepsi">Pepsi</label>
+    <h2 id="nation">Моя національність:</h2>
+    <label>
+        <input type="radio" name="nation" value="UA"> Українець
+    </label><br>
+    <label>
+        <input type="radio" name="nation" value="PL">Поляк
+    </label><br>
+    <label>
+        <input type="radio" name="nation" value="FR">Француз
+    </label><br>
+    </form>
+</body>
+</html>
