@@ -1,0 +1,121 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/6143369/pexels-photo-6143369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.8) 85%, #ffffff 100%), 
+    url('https://images.pexels.com/photos/6143369/pexels-photo-6143369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
+background-size: cover;
+}
+
+.image-container {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.8) 85%, #ffffff 100%), 
+                url('your-image-path.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+}
+
+
+body {
+    font-family: "Lato", sans-serif; 
+    transition: margin-left .5s;
+    padding: 0; 
+    margin: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.closebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-coLor: transparent;
+    color: #f1f1f1;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 0;
+    margin-left: 60%;
+    margin-top: 5px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer; 
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 9px; 
+    visibility: visible;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 15px; 
+    text-decoration: none; 
+    font-size: 15px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    font-size: 1.6em; 
+    font-weight: bold;
+    color: black;
+    background-color: #f1f1f1;
+    margin: 0px 15px 15px 15px; 
+    border-radius: 8px; 
+    text-decoration: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* Адаптація для планшетів */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Адаптація для смартфонів */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
